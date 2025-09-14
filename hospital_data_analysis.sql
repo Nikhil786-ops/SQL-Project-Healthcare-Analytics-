@@ -29,7 +29,7 @@ Project Overview
   RENAME COLUMN LOCATION TO CITY;
 
 #  Key Data Queries
-   Each query below addresses a specific analytical question, with the results providing insights into the hospital's performance.
+   Each query below addresses a specific analytical question, with the results providing insights into the hospitals performance.
 
 1. Total Patient Count
 
@@ -80,7 +80,7 @@ GROUP BY HOSPITAL_NAME;
 
 This query determines the single longest patient stay by subtracting the admission date from the discharge date and finding the maximum value.
 
-Note: The original query's date subtraction is correct for PostgreSQL.
+Note: The original querys date subtraction is correct for PostgreSQL.
 
 SELECT HOSPITAL_NAME, DEPARTMENT, (DISCHARGE_DATE - ADMISSION_DATE) AS HOSPITAL_STAY
 FROM HOSP_DATA
@@ -121,7 +121,7 @@ LIMIT 1;
 
 This final query generates a monthly report of total medical expenses. It uses PostgreSQL's TO_CHAR function to group the data by month.
 
-Note: The query uses TO_CHAR because it's the standard function for date formatting in PostgreSQL, providing a more robust and professional solution than other alternatives.
+Note: The query uses TO_CHAR because it 's the standard function for date formatting in PostgreSQL, providing a more robust and professional solution than other alternatives.
 
 SELECT
     HOSPITAL_NAME,
@@ -138,6 +138,7 @@ ORDER BY
     EXPENSE_MONTH,
     HOSPITAL_NAME,
     DEPARTMENT;
+
 
 
 
