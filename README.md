@@ -10,7 +10,6 @@ The dataset (`Hosp_data`) contains hospital records with columns like `Hospital_
 1. **Total Patient Count**: Calculate total patients across all hospitals.
 2. **Average Doctors per Hospital**: Assess staffing levels.
 3. **Top 3 Departments**: Identify departments with the highest patient volumes.
-4. ... (list all 10 queries)
 
 ## Insights
 - Cardiology and General Medicine are the busiest departments, requiring more resources.
